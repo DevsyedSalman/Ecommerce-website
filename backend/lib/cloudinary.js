@@ -4,9 +4,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 cloudinary.config({
-	cloud_name: 'dh32zavox',
-	api_key: '339759459925196',
-	api_secret: 'gCDXDzEw98Rs_596ateOENhBA5Q',
+	cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+	api_key: process.env.CLOUDINARY_API_KEY,
+	api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 export default cloudinary;
